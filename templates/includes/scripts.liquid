@@ -1,0 +1,9 @@
+<script>
+document.write('<script src=' + ('__proto__' in {} ? '{{ "jquery.js" | asset_url }}' : '{{ "jquery.js" | asset_url }}') + '><\/script>')
+</script>
+{{ "countdown.js" | asset_url | script_tag }}
+{{ "app.js" | asset_url | script_tag }}
+{{ "script.js" | asset_url | script_tag }}
+<script>
+$(document).foundation();
+</script>
